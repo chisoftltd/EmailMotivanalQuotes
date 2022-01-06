@@ -4,10 +4,11 @@ import datetime as dt
 
 now = dt.datetime.now()
 weekday = now.weekday()
+month = now.month
 my_email = 'python.chinwe@gmail.com'
 pwd = 'pyt@#chinwe'
 
-if weekday == 2:
+if weekday == 3 and month == 1:
     with open("quotes.txt") as quote_file:
         quote_list = quote_file.readlines()
         quote = random.choice(quote_list)
@@ -23,4 +24,3 @@ if weekday == 2:
             msg=f"Subject:Motivational Quote"
                 f"\n\n{quote_only}\n\n{quote_author}"
         )
-
