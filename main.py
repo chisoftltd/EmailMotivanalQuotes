@@ -8,6 +8,7 @@ month = now.month
 my_email = 'python.chinwe@gmail.com'
 pwd = 'pyt@#chinwe'
 
+
 if weekday == 3 and month == 1:
     with open("quotes.txt") as quote_file:
         quote_list = quote_file.readlines()
@@ -20,7 +21,7 @@ if weekday == 3 and month == 1:
         connection.login(my_email, pwd)
         connection.sendmail(
             from_addr=my_email,
-            to_addrs='gnexplore@gmail.com',
+            to_addrs='chinwej.obiageri@gmail.com',
             msg=f"Subject:Motivational Quote"
                 f"\n\n{quote_only}\n\n{quote_author}"
         )
